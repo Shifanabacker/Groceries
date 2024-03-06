@@ -1,0 +1,1223 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif; /* Set the font family to Montserrat */
+
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.logo {
+    margin: 10;
+    font-size: 24px;
+    margin-left: 20px;
+    font-family: 'Montserrat', sans-serif; /* Set the font family to Montserrat */
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.login-register {
+    margin-right: 60px;
+}
+
+.profile-link, .search-link, .cart-link, .favorite-link {
+    color: #00d0ff;
+    text-decoration: none;
+    margin-left: 20px;
+    position: relative;
+}
+
+.profile-link:hover, .search-link:hover, .cart-link:hover, .favorite-link:hover {
+    color: #ccc;
+}
+
+
+.home-section {
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('home-bg.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden; /* Ensure the arrows are not visible outside the container */
+    font-family: 'Montserrat', sans-serif; /* Set the font family to Montserrat */
+
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 999; /* Ensure arrows appear above other content */
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(255, 255, 255); /* Adjust text color as needed */
+}
+
+.container h2 {
+    font-size: 3em;
+    letter-spacing: 3px; /* Increase letter spacing */
+    margin-bottom: 30px; /* Increase distance from the next element */
+}
+
+.container p {
+    font-size: 1.2em;
+    letter-spacing: 2px; /* Increase letter spacing */
+    margin-bottom: 50px; /* Increase distance from the next element */
+}
+
+.container .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2285ff; /* Adjust button color as needed */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    margin-bottom: 100px; /* Increase distance from the next element */
+    letter-spacing: 1px; /* Increase letter spacing */
+}
+
+.container .btn:hover {
+    background-color: #156dd8; /* Adjust button color as needed */
+}
+.carousel {
+    position: relative;
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.indicator {
+    display: inline-block;
+    width: 100px;
+    height: 10px;
+    background-color: #aaa;
+}
+
+.indicator.active {
+    background-color: #333;
+}
+
+
+.half-size-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #e7e4e4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif; /* Set the font family to Montserrat */
+    letter-spacing: 1px; /* Add space between each letter */
+
+
+}
+.half-size-section .flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.half-size-section .item {
+    flex: 0 0 calc(33.33% - 20px); /* Adjust the width of each item */
+    /* Subtracting 20px for margin between items */
+    margin-bottom: 20px; /* Add spacing between items */
+}
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center items vertically */
+    width: 80%;
+    border-radius: 1px solid grey;
+}
+
+.item {
+    flex: 0 0 calc(33.33% - 10px); /* Adjust the width of each item */
+    /* Subtracting 10px for margin between items */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    display: flex; /* Display children (image and details) as flex */
+    padding: 20px;
+}
+.half-size-section h4 {
+    color: #aaa; /* Set the color of h4 elements to grey */
+}
+
+.half-size-section h2,
+.half-size-section p {
+    color: #000; /* Set the color of h2 and p elements to black */
+}
+
+.img {
+    flex: 1; /* Take remaining space */
+}
+
+.img img {
+    max-width: 100%;
+    height: auto;
+    transform: scaleX(-1); 
+}
+.Details {
+    text-align: left; 
+    margin-left: 50px;
+}
+
+/* Section 1 */
+.section-1 {
+    font-family: 'Montserrat', sans-serif; /* Set the font family to Montserrat */
+
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Add space below */
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: white;
+}
+
+/* Container for image and details */
+.container-1 {
+    display: flex;
+    align-items: flex-start; /* Align items at the start of the cross axis */
+    background-color: #ffffff; /* Light gray background */
+}
+
+/* Image container */
+.section-1 .image-container {
+    
+    margin-right: 30px; /* Add some spacing between the image and details */
+}
+
+.image-container img {
+    height: 800px;
+    width: 500px;
+}
+.image-container {
+    position: relative;
+}
+
+.text-overlay {
+    margin-top: 20px;
+    margin-left: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: left;
+}
+.text-overlay h2{
+    color: black;
+    font-size: 14px; /* Adjust font size */
+
+}
+.text-overlay h4 {
+    color: rgba(0, 0, 0, 0.24);
+    font-size: 12px; /* Adjust font size */
+
+}
+.text-overlay h2,
+.text-overlay h4 {
+    margin: 10px 0;
+}
+
+
+
+
+/* Details container */
+.details-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #ccc; /* Add this line */
+}
+.bestseller-items ul li:nth-child(1) {
+    color: blue;
+}
+
+.bestseller-items ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.bestseller-items ul li {
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.item {
+    width: calc(33.33% - 10px);
+    margin-bottom: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-color: white;
+}
+
+.item img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.item h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.item p {
+    margin-bottom: 15px;
+}
+.price-container {
+    display: flex;
+    justify-content: center;
+}
+
+.original-price,
+.offer-price {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.original-price {
+    color: rgba(0, 0, 0, 0.118);
+}
+.offer-price{
+    color: #086f3c;
+}
+
+.arrowss {
+    display: flex;
+}
+
+.left-arrows,
+.right-arrows {
+    border: 3px solid #000; /* Border color */
+    border-radius: 50%; /* Rounded border */
+    background-color: #ffffff; /* Background color */
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.left-arrows{
+    border-color: #00000042;
+}
+.right-arrows {
+    margin-left: 10px; /* Add space between buttons */
+    background-color: #ffffff; /* Different color for right button */
+}
+
+/* Hover effect */
+.left-arrows:hover,
+.right-arrows:hover {
+    background-color: #ffffff; /* Change background color on hover */
+}
+
+
+@media screen and (max-width: 768px) {
+    .section-1 .image-container {
+        margin-right: 0; /* Remove margin */
+        margin-bottom: 20px; /* Add space between image and details */
+        text-align: center; /* Center image */
+    }
+
+    .image-container {
+        width: 100%; /* Ensure image container takes full width */
+        display: flex; /* Display items in a row */
+        justify-content: center; /* Center items horizontally */
+        align-items: center; /* Center items vertically */
+    }
+
+    .image-container img {
+        max-width: 100%; /* Ensure the image doesn't overflow */
+    }
+
+    .section-1 .details-container {
+        padding: 0 20px; /* Add padding */
+    }
+
+    .section-1 .details-container {
+        width: 100%; /* Set width to full */
+    }
+
+    .section-1 .head {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        text-align: center; /* Center text */
+    }
+
+    .bestseller-items ul li {
+        display: block; /* Display list items as block elements */
+        margin: 10px 0; /* Add margin between list items */
+    }
+
+    .section-1.left-arrows,
+    .section-1.right-arrows {
+        padding: 8px; /* Adjust padding */
+    }
+    .section-3 .details-container {
+        width: 100%; /* Set width to full */
+    }
+
+    .section-3 .head {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        text-align: center; /* Center text */
+    }
+
+    .bestseller-items ul li {
+        display: block; /* Display list items as block elements */
+        margin: 10px 0; /* Add margin between list items */
+    }
+
+    .section-3.left-arrows,
+    .section-3.right-arrows {
+        padding: 8px; /* Adjust padding */
+    }
+}
+
+
+
+
+
+
+
+
+.section-3 {
+    font-family: 'Montserrat', sans-serif; /* Set the font family to Montserrat */
+
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Add space below */
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: white;
+}
+
+
+
+.section-3 .image-container {
+    
+    margin-left: 30px; /* Add some spacing between the image and details */
+}
+
+
+/* Styling for section-2 */
+.section-2 {
+    font-family: 'Montserrat', sans-serif; /* Set the font family to Montserrat */
+    padding: 100px;
+    background-color: #ffffff;
+}
+
+/* Styling for container-2 */
+.container-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling for first div */
+.first {
+    display: flex;
+}
+
+/* Styling for image */
+.image {
+    width: 50%; 
+    height: 500px; /* Set the height */
+}
+
+/* Styling for desc */
+.desc {
+    width: 50%; 
+    background-color: rgba(128, 128, 128, 0.199);
+    align-items: center; 
+    justify-content: center; 
+    height: 500px; /* Set the height */
+}
+
+/* Styling for images */
+.image img {
+    max-width: 100%;
+    height: 100%; /* Adjusted to fill the container height */
+}
+
+/* Styling for description-box */
+.desc img {
+    width: 300px; 
+    height: 250px;
+    display: block; /* Ensure image behaves as a block element */
+    margin: auto; /* Center the image horizontally */
+}
+
+.desc h3 {
+    text-align: center; /* Center text horizontally */
+}
+
+.desc h5 {
+    text-align: center; /* Center text horizontally */
+}
+
+.desc p {
+    text-align: center;
+}
+
+.price-container {
+    margin-top: 10px;
+}
+
+.second {
+    margin-top: 20px;
+    display: flex; /* Use flexbox to center items */
+    justify-content: center; /* Center items horizontally */
+}
+
+/* Styling for the description list */
+.description-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Display items in a row */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+}
+
+/* Styling for each description box */
+.description-box {
+    margin-right: 10px; /* Add some space between boxes */
+    flex: 1; /* Each box takes equal space */
+    min-width: 200px; /* Minimum width for each box */
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+/* Styling for the heading */
+.description-box h3 {
+    margin-top: 0;
+}
+
+/* Styling for the paragraph */
+.description-box p {
+    margin: 0;
+}
+
+/* Styling for the number list */
+.description-list li {
+    counter-increment: boxNumber; /* Increment the counter */
+}
+
+/* Styling for the number */
+.description-list li::before {
+    content: counter(boxNumber); /* Use counter for numbering */
+    font-weight: bold; /* Make the number bold */
+    margin-right: 5px; /* Add some space between the number and the text */
+}
+
+
+
+/* Styling for the download container */
+.download-container {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    margin-left: 330px; /* Add margin between the icon and the text */
+
+}
+
+/* Styling for the Font Awesome icon */
+.download-container .fas {
+    font-weight: bold;
+}
+
+/* Styling for the sales count */
+.download-container h5 {
+    margin: 0; /* Remove default margin */
+    font-weight: bold;
+}
+
+/* Smaller screen CSS for section-2 */
+@media only screen and (max-width: 768px) {
+    .container-2 {
+        flex-direction: column; /* Switch to column layout for smaller screens */
+    }
+
+    .first,
+    .second {
+        width: 100%; /* Make both divs take full width on smaller screens */
+        height: auto; /* Allow height to adjust based on content */
+        display: block; /* Ensure each div takes a full row */
+    }
+
+    .image,
+    .desc {
+        width: 100%; /* Make both image and description divs take full width */
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .image img {
+        width: 100%; /* Make image fill the container width */
+        height: auto; /* Allow image height to adjust based on content */
+    }
+
+    .desc img {
+        width: 200px; /* Reduce image width for smaller screens */
+        height: auto; /* Allow image height to adjust based on content */
+        margin: 0 auto; /* Center image horizontally */
+    }
+
+    .description-list {
+        flex-direction: column; /* Switch list items to column layout */
+    }
+
+    .description-box {
+        margin: 0; /* Remove margin between boxes */
+        min-width: auto; /* Allow boxes to adjust width based on content */
+    }
+
+    .download-container {
+        margin-left: 0; /* Remove left margin for download container */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section-4 {
+        flex-direction: column;
+    }
+
+    .container-4 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .first {
+        margin-bottom: 20px; /* Add some space between first and second sections */
+    }
+
+    .image {
+        display: block; /* Show the image on smaller screens */
+        margin-top: 20px; /* Add some space between the text and the image */
+    }
+}
+/* Original styles for section-5 */
+.section-5 {
+    background-color: #d6d6d6;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.section-5 .flexbox {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.section-5 .item {
+    flex: 0 0 auto;
+    margin-right: 10px;
+    text-align: center;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    .section-5 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .section-5 .flexbox {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .section-5 .item {
+        flex: 0 0 45%; /* Adjust as needed */
+        margin-right: 0;
+        margin-bottom: 20px; /* Add space between items */
+    }
+    .section-5 .head h2 {
+        white-space: nowrap; /* Prevent the text from wrapping */
+        overflow: hidden; /* Hide any overflow */
+        text-overflow: ellipsis; /* Display ellipsis (...) if the text overflows */
+        font-size: 20px;
+    }
+    
+}
+
+.section-6 {
+    margin-top: -20px; /* Offset the margin from the previous section */
+}
+
+
+
+.section-6 .foot-5 img {
+    width: 100%; /* Set the image width to 100% of its container */
+    height: auto; /* Maintain the image's aspect ratio */
+}
+
+
+
+/* Section Styles */
+.section-7 {
+    padding: 100px;
+    background-color: #ffffff;
+}
+
+/* Heading Container Styles */
+.hed {
+    text-align: center;
+}
+
+/* Big Heading Styles */
+.big-heading {
+    font-size: 34px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+/* Small Heading Styles */
+/* Small Heading Styles */
+.small-heading {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: blue; /* Set the color to blue */
+}
+
+
+/* Boxes Container Styles */
+.boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+
+.img-box {
+    flex: 1;
+    text-align: center;
+    margin: 0 5px; /* Add a small margin to create a gap between images */
+    position: relative; /* Set position to relative for absolute positioning */
+}
+
+.img-box img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+
+/* Box Description Styles */
+/* Image Box Styles */
+
+/* Paragraph Styles */
+/* Paragraph Styles */
+.img-box p {
+    position: absolute;
+    bottom: 260px; /* Adjust the distance from the bottom */
+    left: 10px;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.boxes1 {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* List Styles */
+.cont-box ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; /* Remove default bullet points */
+    display: flex; /* Display list items in a row */
+}
+
+.cont-box ul li {
+    margin-right: 20px; /* Add spacing between list items */
+    font-size: 12px;
+}
+
+.blue-text {
+    color: rgb(0, 183, 255);
+}
+/* Heading Styles */
+.cont-box h3 {
+    font-size: 22px;
+    font-weight: normal; /* Remove bold font weight */
+    margin-bottom: 10px;
+    text-align: left; /* Align to the left */
+    letter-spacing: 1px; /* Adjust letter-spacing */
+    line-height: 1.5; /* Adjust line-height */
+
+}
+
+/* Paragraph Styles */
+/* Paragraph Styles */
+.cont-box p {
+    margin-bottom: 10px;
+    text-align: left; /* Align to the left */
+    color: #999; /* Lighten the text color */
+    letter-spacing: 1px; /* Adjust letter-spacing */
+    line-height: 1.5; /* Adjust line-height */
+}
+
+
+.time-comments {
+    display: flex;
+    align-items: center;
+    color: #999; /* Lighter color for the text */
+    font-size: 14px; /* Smaller font size */
+    margin-top: 20px;
+}
+
+.time-comments span {
+    margin-right: 20px; /* Add space between the icons and text */
+}
+
+.time-comments i {
+    margin-right: 5px; /* Add space between the icon and text */
+}
+
+/* Adjust icon colors and size */
+.time-comments .fa-clock {
+    color: rgb(0, 162, 255);
+    font-size: 16px; /* Adjust icon size */
+}
+
+.time-comments .fa-chart-bar                          
+ {
+    color: green;
+    font-size: 16px; /* Adjust icon size */
+}
+.cont-box a {
+    color: #555; /* Light black color for the link */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make the link a block element */
+    margin-top: 40px;
+    margin-right: 300px; /* Move the link to the leftmost position */
+}
+
+.cont-box a:hover {
+    text-decoration: none; /* Remove underline on hover */
+}
+
+.cont-box a i {
+    color: rgb(0, 157, 255); /* Blue color for the arrow icon */
+}
+
+@media only screen and (max-width: 768px) {
+/* Section Styles */
+.section-7 {
+    padding: 50px; /* Decrease padding for smaller screens */
+}
+
+/* Big Heading Styles */
+.big-heading {
+    font-size: 28px; /* Decrease font size for smaller screens */
+}
+
+/* Small Heading Styles */
+.small-heading {
+    font-size: 11px; /* Decrease font size for smaller screens */
+    margin-bottom: 15px; /* Adjust margin for smaller screens */
+}
+
+/* Boxes Container Styles */
+.boxes {
+    display: block; /* Change to block layout for smaller screens */
+    margin-top: 40px; /* Adjust margin for smaller screens */
+}
+
+/* Image Box Styles */
+.img-box {
+    margin: 0 auto 20px; /* Center align and adjust margin for smaller screens */
+}
+
+.img-box img {
+    height: auto; /* Make image height auto for responsiveness */
+}
+
+.img-box p {
+    position: static; /* Remove absolute positioning for smaller screens */
+    bottom: auto; /* Reset bottom position */
+    left: auto; /* Reset left position */
+    margin: 10px auto 0; /* Center align and adjust margin for smaller screens */
+}
+
+/* List Styles */
+.cont-box ul li {
+    margin-right: 15px; /* Decrease margin between list items for smaller screens */
+    font-size: 10px; /* Decrease font size for smaller screens */
+}
+
+/* Heading Styles */
+.cont-box h3 {
+    font-size: 18px; /* Decrease font size for smaller screens */
+    margin-bottom: 5px; /* Adjust margin for smaller screens */
+}
+
+/* Paragraph Styles */
+.cont-box p {
+    font-size: 10px; /* Decrease font size for smaller screens */
+}
+
+/* Time and Comments Styles */
+.time-comments {
+    font-size: 12px; /* Decrease font size for smaller screens */
+    margin-top: 10px; /* Adjust margin for smaller screens */
+}
+
+.time-comments span {
+    margin-right: 10px; /* Decrease space between icons and text for smaller screens */
+}
+
+.cont-box a {
+    margin: 20px auto; /* Center align and adjust margin for smaller screens */
+    margin-right: 0; /* Reset right margin for smaller screens */
+}
+}
+
+
+
+
+
+footer {
+    font-family: 'Montserrat', sans-serif; /* Set the font family to Montserrat */
+
+    background-color: #1c2342;
+   padding-bottom:  40px;
+   padding-top : 40px;
+   padding-left: 200px;
+   padding-right: 200px;
+    color: #ffffff;
+}
+.footer-content1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; /* Aligns items to left and right */
+    letter-spacing: 1px; /* Increase letter spacing */
+}
+
+.footer-content1 .hd {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    line-height: 1.5; /* Increase row spacing */
+}
+
+.footer-content1 .hd h3,
+.footer-content1 .hd p {
+    margin: 0;
+}
+
+.footer-content1 .btn-container {
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+.footer-content1 button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 20px; /* Adjust right margin */
+}
+
+.footer-content1 button:hover {
+    background-color: #0056b3;
+}
+.footer-content2 {
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; /* Aligns items to left and right */
+    margin-top: 50px; /* Increase top margin */
+    line-height: 1.5; /* Increase space between rows */
+}
+
+.footer-content2 .list-container {
+    flex: 1; /* Make each list container take up equal space */
+    margin-right: 10px; /* Decrease spacing between list containers */
+}
+
+.footer-content2 .list-container:last-child {
+    margin-right: 0; /* Remove margin from the last list container */
+}
+
+.footer-content2 ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Set the ul as a flex container */
+    flex-direction: column; /* Align list items vertically */
+    letter-spacing: 1px; /* Increase letter spacing */
+}
+
+.footer-content2 ul li {
+    margin-bottom: 10px; /* Increase space between list items */
+}
+
+/* Decrease gap between list containers */
+.footer-content2 .list-container + .list-container {
+    margin-left: 10px; /* Decrease spacing between list containers */
+}
+
+
+.footer-content3 {
+    display: flex; /* Set the container as a flex container */
+    justify-content: space-between; /* Space out items evenly */
+    align-items: center; /* Align items vertically */
+    margin-top: 70px; /* Add top margin */
+    margin-bottom: 20px; /* Add bottom margin */
+}
+
+.footer-content3 .para {
+    margin: 0; /* Remove default margin */
+}
+
+.footer-content3 .icn {
+    display: flex;
+     /* Set the icons container as a flex container */
+}
+
+.footer-content3 .icn a {
+    margin-left: 15px; /* Adjust spacing between icons */
+    color: #00d0ff;
+}
+
+/* Original footer styles remain here */
+
+/* Media query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .footer-content1 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-content1 .btn-container {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .footer-content1 button {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .footer-content2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-content2 .list-container {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .footer-content2 .list-container + .list-container {
+        margin-left: 0;
+    }
+
+    .footer-content3 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-content3 .icn {
+        justify-content: center;
+    }
+
+    .footer-content3 .icn a {
+        margin-left: 0;
+        margin-right: 15px;
+    }
+}
+
+
+
+
+
+@media screen and (min-width: 769px) {
+    .menu-toggle {
+        display: none;
+    }
+}
+@media screen and (max-width: 768px) {
+    .header-container {
+        display: flex;
+        justify-content: space-between; /* Align items at the start and end */
+position: relative;    }
+    
+    .logo {
+        margin-left: 0px;
+        margin-bottom: 20px;
+        font-family: 'Montserrat', sans-serif; /* Set the font family to Montserrat */
+    }
+
+    .search-icon {
+        margin-right: 10px;
+        color: black; /* Change icon color to black */
+    }
+
+    .cart-icon {
+        margin-right: 0; /* Remove right margin */
+        color: black; /* Change icon color to black */
+    }
+
+    nav ul {
+  
+            display: none; /* Hide the navigation links by default */
+            flex-direction: column;
+            align-items: center; /* Align the items in the center horizontally */
+            justify-content: center;
+            position: absolute; /* Position the nav list absolutely */
+            top: 100%; /* Align it below the header container */
+            left: 50%; /* Align it with the left edge of the header container */
+            background-color: #ffffff; /* Add background color */
+            padding: 10px; /* Add padding */
+       
+    }
+
+    nav ul.active {
+        display: flex; /* Display the navigation links when active */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Add spacing between each navigation item */
+    }
+
+    /* Hide login/register link and favorite icon */
+    .login-register .profile-link,
+    .favorite-link {
+        display: none;
+    }
+
+    /* Remove the message from cart icon on smaller screens */
+    .cart-icon:after {
+        display: none;
+    }
+    .nav-links {
+        display: none; /* Hide the navigation links by default */
+    }
+
+    .nav-links.active {
+        display: flex; /* Display the navigation links when active */
+        flex-direction: column; /* Arrange links in a column */
+        align-items: center; /* Center items horizontally */
+        justify-content: center; /* Center items vertically */
+        position: absolute; /* Position the nav list absolutely */
+        top: 100%; /* Align it below the header container */
+        left: 50%; /* Align it with the left edge of the header container */
+        background-color: #ffffff; /* Add background color */
+        padding: 10px; /* Add padding */
+    }
+
+
+
+        .container h2 {
+            font-size: 3em;
+        }
+        .container p {
+            font-size: 2em;
+        }
+        .container .btn {
+            font-size: 2.5em;
+        }
+        .flex-container {
+            flex-direction: column;
+        }
+        .item {
+            flex: 1 1 100%; /* Each item takes up full width */
+            width: 100%; /* Set the width to 100% */
+            max-width: none; /* Disable max-width */
+            margin-bottom: 20px; /* Add spacing between items */
+        }
+
+        .container-1 {
+            flex-direction: column; /* Stack items vertically */
+            align-items: center; /* Center items horizontally */
+        }
+    
+        }
